@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Otomanopee+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <title>BREMENS</title>
+  <meta name="description" content="4人組音楽ユニットBREMENSの公式サイトです">
+  <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>BREMENS</h1>
+    </div>
+    <div class="icons">
+      <a href="" class="twitter-icon"><img src="img/Logo white.svg" alt="Twitterへのリンクです" ></a>
+      <a href="https://www.youtube.com/channel/UCblSUGO6ncjJymq7_uDJObQ" class="youtube-icon"><img src="img/yt_icon_mono_dark.png" alt="YouTubeへのリンクです"></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ポップアップ -->
+    <div id="music-popup" class="music-popup">
+      <p>こちらのサイトでは音楽が流れます。</p>
+      <div class="disc">
+        <img src="img/tsukinoshitade.jpg">
+        <p>♪月の下で</p>
+      </div>
+      <div class="select">
+        <div id="popup-play">再生する</div>
+        <div id="popup-skip">今は聞かない</div>
+      </div>
+    </div>
+
+
+    <div class="bgm">
+        <!-- 再生ボタン -->
+        <button id="play" class=""><span class="material-icons">play_arrow</span></button>
+        <!-- 音量ボタン -->
+        <button id="volume-up"><span class="material-icons">volume_up</span></button>
+        <button id="volume-down"><span class="material-icons">volume_down</span></button>
+        <!-- ミュートボタン -->
+        <button id="mute"><span class="material-icons">volume_off</span></button>
+      <!-- </div> -->
+    </div>
+
+    <!-- メニューボタン -->
+    <div class="btn-menu disappear" id="btn-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- 背景 -->
+    <div id="back"></div>
+  
+    <section class="board">
+      <div class="main-menu">
+        <a href="#list0"><h2>NEW RELEASE</h2></a>
+        <a href="#list1"><h2>WORKS</h2></a>
+        <a href="#list2"><h2>LIVE</h2></a>
+        <!-- <a href="live.html"><h2>LIVE</h2></a> -->
+        <a href="#list3"><h2>WHAT'S BREMENS?</h2></a>
+        <a href="#list4"><h2>CONTACT US</h2></a>
+      </div>
+      <div class="moon">
+
+        <img src="img/BREMENS.png" alt="" class="bremens">
+      </div>
+      <!-- <img src="img/cat-white.svg" alt="猫の足跡です" class="cat-left">
+      <img src="img/cat-white.svg" alt="猫の足跡です" class="cat-right">
+      <img src="img/cat-white.svg" alt="猫の足跡です" class="cat-left back">
+      <img src="img/cat-white.svg" alt="猫の足跡です" class="cat-right back"> -->
+      <div class="sp-icons">
+        <a href="" class="twitter-icon"><img src="img/Logo white.svg" alt="Twitterへのリンクです" ></a>
+        <a href="https://www.youtube.com/channel/UCblSUGO6ncjJymq7_uDJObQ" class="youtube-icon"><img src="img/yt_icon_mono_dark.png" alt="YouTubeへのリンクです"></a>
+      </div>
+    </section>
+    <ul class="menu" id="menu">
+      <li class="mn-list"><h2>NEW RELEASE</h2></li>
+      <li class="mn-list"><h2>WORKS</h2></li>
+      <li class="mn-list"><h2>LIVE</h2></li>
+      <li class="mn-list"><h2>WHAT'S BREMENS?</h2></li>
+      <li class="mn-list"><h2>CONTACT US</h2></li>
+    </ul>
+
+    <section id="list0" class="release">
+      <h2>NEW RELEASE</h2>
+      
+      <div class="sample">
+        <div class="iframe-responsive">
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hcVC0CyVddM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="disc-detail">
+          <h3>Single『Find out mystery!』</h3>
+          <ul>
+            <li>01.Find out mystery!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="list1" class="works">
+      <h2>WORKS</h2>
+      <div class="carousel">
+        <div class="works-container">
+          <ul class="ul">
+            <li>
+              <div class="disc-card">
+                <img src="img/lostkitten.jpg" class="disc-image">
+                <div>
+                  <h3>2nd Mini Album<br>「Lost kitten」</h3>
+                  <ul>
+                    <li>01.omawarisan</li>
+                    <li>02.okomarisan</li>
+                    <li>03.otonarisan</li>
+                    <li>04.okaerinasai</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="disc-card">
+                <img src="img/asattedatta.jpg" class="disc-image">
+                <div>
+                  <h3>Single『AsatteDatta』</h3>
+                  <ul>
+                    <li>01.AsatteDatta</li>
+                    <li>02.AsatteDatta(off vocal)</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="disc-card">
+                <img src="img/tsukinoshitade.jpg" class="disc-image">
+                <div>
+                  <h3>Single『月の下で』</h3>
+                  <ul>
+                    <li>01.月の下で</li>
+                    <li>02.月の下で(acoustic ver.)</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button id="prev"><span class="material-icons md-36">chevron_left</span></button>
+          <button id="next"><span class="material-icons md-36">chevron_right</span></button>
+        </div>
+
+        <nav>
+          <!-- <button class="current"></button>
+          <button></button>
+          <button></button> -->
+        </nav>
+
+      </div><!-- ここまでがカルーセル -->
+    </section>
+
+
+    <section id="list2" class="live">
+      <div>
+        <h2>LIVE</h2>
+        <p>2021.08.23</p>
+        <h3>ワンワンライブ2022 配信決定!</h3>
+        <p>BREMENS待望のワンマンライブの配信を行います。</p>
+        <p>チケットなど、詳細は <a href="" style="text-decoration: underline;">特設サイト</a>をCHECK!</p>
+      </div>
+      <div>
+        <p>2021.07.23</p>
+        <h3>渋谷SHIPPO 「サマーライブ2021」開催</h3>
+        <p>2021.07.23 渋谷SHIPPOにて開催された「サマーライブ2021」にご来場いただきありがとうございました。</p>
+        <p></p>
+      </div>
+    </section>
+
+
+    <section id="list3" class="profile">
+      <h2>WHAT'S BREMENS?</h2>
+      <p>ロバを中心に結成された音楽ユニット"BREMENS"。</p>
+      <p>本業の傍ら、自由な音楽作りを目指す。</p>
+      <p>楽曲はそれぞれの個性を活かしバラエティに富んでいる。</p>
+      <h3>Baロバ</h3>
+      <p>銀行員。打ち込みなどの電子音楽を得意とする。</p>
+      <h3>Drイヌ</h3>
+      <p>公務員。街の平和を一番に考えている。スピード感のあるバンドアレンジを得意とする。</p>
+      <h3>Keyネコ</h3>
+      <p>雑誌編集者。繊細なメロディーメイカー。主にストリングスの編曲を担当している。</p>
+      <h3>Gt&Voトリ</h3>
+      <p>青果店員。声が通る為、マイクなしのパフォーマンスにも定評がある。ボーカル曲の作詞を担当。</p>
+    </section>
+
+
+    <section id="list4">
+      <h2>CONTACT US</h2>
+      <p>お仕事やご感想、ご質問などはこちらから</p>
+      <label>お名前<br><input type="text"></label><br>
+      <label>ご連絡先<br><input type="text"></label><br>
+      <label>お問い合わせ内容<br><textarea></textarea></label>
+    </section>
+    <!-- <div id="top">PAGE TOP</div> -->
+  </main>
+
+
+  <footer>
+    <p>(c)omoteaki</p>
+    <p>このサイトで使用している楽曲・イラストは全てomoteakiのオリジナル作品です。</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
