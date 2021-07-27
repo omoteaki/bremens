@@ -32,11 +32,11 @@
       <p>こちらのサイトでは音楽が流れます。</p>
       <div class="disc">
         <img src="img/tsukinoshitade.jpg">
-        <p>♪月の下で</p>
-      </div>
-      <div class="select">
-        <div id="popup-play">再生する</div>
-        <div id="popup-skip">今は聞かない</div>
+        <div class="select">
+          <p>♪月の下で</p>
+          <div id="popup-play">再生する</div>
+          <div id="popup-skip">今は聞かない</div>
+        </div>
       </div>
     </div>
 
@@ -70,18 +70,20 @@
         <!-- <a href="live.html"><h2>LIVE</h2></a> -->
         <a href="#list3"><h2>WHAT'S BREMENS?</h2></a>
         <a href="#list4"><h2>CONTACT US</h2></a>
+        <div class="sp-icons">
+          <a href="" class="twitter-icon"><img src="img/Logo white.svg" alt="Twitterへのリンクです" ></a>
+          <a href="https://www.youtube.com/channel/UCblSUGO6ncjJymq7_uDJObQ" class="youtube-icon"><img src="img/yt_icon_mono_dark.png" alt="YouTubeへのリンクです"></a>
+        </div>
       </div>
       <div class="moon">
 
         <img src="img/BREMENS.png" alt="" class="bremens">
       </div>
-      <!-- <img src="img/cat-white.svg" alt="猫の足跡です" class="cat-left">
-      <img src="img/cat-white.svg" alt="猫の足跡です" class="cat-right">
-      <img src="img/cat-white.svg" alt="猫の足跡です" class="cat-left back">
-      <img src="img/cat-white.svg" alt="猫の足跡です" class="cat-right back"> -->
-      <div class="sp-icons">
-        <a href="" class="twitter-icon"><img src="img/Logo white.svg" alt="Twitterへのリンクです" ></a>
-        <a href="https://www.youtube.com/channel/UCblSUGO6ncjJymq7_uDJObQ" class="youtube-icon"><img src="img/yt_icon_mono_dark.png" alt="YouTubeへのリンクです"></a>
+      <div class="cat">
+        <img src="img/cat-white.svg" alt="猫の足跡です" class="left">
+        <img src="img/cat-white.svg" alt="猫の足跡です" class="right">
+        <img src="img/cat-white.svg" alt="猫の足跡です" class="left back">
+        <img src="img/cat-white.svg" alt="猫の足跡です" class="right back">
       </div>
     </section>
     <ul class="menu" id="menu">
@@ -93,7 +95,7 @@
     </ul>
 
     <section id="list0" class="release">
-      <h2>NEW RELEASE</h2>
+      <h2 class="section-title">NEW RELEASE</h2>
       
       <div class="sample">
         <div class="iframe-responsive">
@@ -112,7 +114,7 @@
 
 
     <section id="list1" class="works">
-      <h2>WORKS</h2>
+      <h2 class="section-title">WORKS</h2>
       <div class="carousel">
         <div class="works-container">
           <ul class="ul">
@@ -134,10 +136,10 @@
               <div class="disc-card">
                 <img src="img/asattedatta.jpg" class="disc-image">
                 <div>
-                  <h3>Single『AsatteDatta』</h3>
+                  <h3>Single『ASATTE DATTA』</h3>
                   <ul>
-                    <li>01.AsatteDatta</li>
-                    <li>02.AsatteDatta(off vocal)</li>
+                    <li>01.ASATTE DATTA</li>
+                    <li>02.ASATTE DATTA(off vocal)</li>
                   </ul>
                 </div>
               </div>
@@ -170,15 +172,15 @@
 
 
     <section id="list2" class="live">
-      <div>
-        <h2>LIVE</h2>
-        <p>2021.08.23</p>
+      <h2 class="section-title">LIVE</h2>
+      <div class="live-topic">
+        <p class="date">2021.08.23</p>
         <h3>ワンワンライブ2022 配信決定!</h3>
         <p>BREMENS待望のワンマンライブの配信を行います。</p>
         <p>チケットなど、詳細は <a href="" style="text-decoration: underline;">特設サイト</a>をCHECK!</p>
       </div>
-      <div>
-        <p>2021.07.23</p>
+      <div class="live-topic">
+        <p class="date">2021.07.23</p>
         <h3>渋谷SHIPPO 「サマーライブ2021」開催</h3>
         <p>2021.07.23 渋谷SHIPPOにて開催された「サマーライブ2021」にご来場いただきありがとうございました。</p>
         <p></p>
@@ -187,9 +189,8 @@
 
 
     <section id="list3" class="profile">
-      <h2>WHAT'S BREMENS?</h2>
-      <p>ロバを中心に結成された音楽ユニット"BREMENS"。</p>
-      <p>本業の傍ら、自由な音楽作りを目指す。</p>
+      <h2 class="section-title">WHAT'S BREMENS?</h2>
+      <p>ロバを中心に結成された音楽ユニット"BREMENS"。本業の傍ら、自由な音楽作りを目指す。</p>
       <p>楽曲はそれぞれの個性を活かしバラエティに富んでいる。</p>
       <h3>Baロバ</h3>
       <p>銀行員。打ち込みなどの電子音楽を得意とする。</p>
@@ -202,8 +203,8 @@
     </section>
 
 
-    <section id="list4">
-      <h2>CONTACT US</h2>
+    <section id="list4" class="contact">
+      <h2 class="section-title">CONTACT</h2>
       <p>お仕事やご感想、ご質問などはこちらから</p>
       <label>お名前<br><input type="text"></label><br>
       <label>ご連絡先<br><input type="text"></label><br>
