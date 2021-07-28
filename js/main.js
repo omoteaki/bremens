@@ -11,7 +11,7 @@
   // メニューリンク
   lists.forEach((list, index) => {
     list.addEventListener('click', function(){
-      const element = document.getElementById("list" + index);
+      const element = document.querySelector('.list' + index);
       const rect =element.getBoundingClientRect();
       const elmtop = rect.top + window.pageYOffset;
       // top.classList.add("appear")
@@ -20,8 +20,8 @@
       menu.classList.remove("appear")
       back.classList.remove("appear");
       document.documentElement.scrollTop = elmtop;
-      console.log(element);
-      console.log(rect);
+      // console.log(element);
+      // console.log(rect);
       
     });
   });
@@ -36,7 +36,7 @@
   // トップ画面の領域が小さくなったらメニューボタンを登場させたい
   const target = document.querySelector('.main-menu');
   function callback(entries) {
-    console.log(entries[0]);
+    // console.log(entries[0]);
 
     if (!entries[0].isIntersecting) {
       btnMenu.classList.remove("disappear");
@@ -68,6 +68,8 @@
   const popupPlay = document.getElementById('popup-play');
   const skip = document.getElementById('popup-skip');
 
+  const cat = document.querySelector('.cat');
+  const moon = document.querySelector('.moon');
   const backgroundColor = document.getElementById('back');
 
 
@@ -78,23 +80,31 @@
     play.innerHTML = "<span class='material-icons'>pause</span>";
       music.play();
       musicPopup.classList.add('close');
+      cat.classList.add('hidden');
+      moon.classList.remove('hidden');
       backgroundColor.classList.add('night');
   });
 
   music.addEventListener('ended', function(){
     play.innerHTML = "<span class='material-icons'>play_arrow</span>";
     backgroundColor.classList.remove('night');
+    cat.classList.remove('hidden');
+    moon.classList.add('hidden');
   });
   // 再生ボタン
   play.addEventListener('click', function(){
     if(!music.paused){
       play.innerHTML = "<span class='material-icons'>play_arrow</span>";
       backgroundColor.classList.remove('night');
+      cat.classList.remove('hidden');
+      moon.classList.add('hidden');
       music.pause();
     } else {
       play.innerHTML = "<span class='material-icons'>pause</span>";
       music.play();
       backgroundColor.classList.add('night');
+      cat.classList.add('hidden');
+      moon.classList.remove('hidden');
     }
   });
 
@@ -128,9 +138,9 @@
   // カルーセル
   const next = document.getElementById('next');
   const prev = document.getElementById('prev');
-  const ul = document.querySelector('.ul');
+  const ul = document.querySelector('.works-container > ul');
   const slides = ul.children;
-  const dots = [];
+  const squares = [];
   let currentIndex = 0;
 
   function updateButtons() {
@@ -150,44 +160,44 @@
     ul.style.transform = `translateX(${-1 * slideWidth * currentIndex}px)`;
   }
 
-  function setupDots() {
+  function setupSquares() {
     for (let i = 0; i < slides.length; i++) {
       const button = document.createElement('button');
       button.addEventListener('click', () => {
         currentIndex = i;
-        updateDots()
+        updateSquares()
         updateButtons();
         moveSlides();
       });
-      dots.push(button);
+      squares.push(button);
       document.querySelector('nav').appendChild(button);
     }
 
-    dots[0].classList.add('current');
+    squares[0].classList.add('current');
   }
 
-  function updateDots() {
-    dots.forEach(dot => {
-      dot.classList.remove('current');
+  function updateSquares() {
+    squares.forEach(square => {
+      square.classList.remove('current');
     });
-    dots[currentIndex].classList.add('current');
+    squares[currentIndex].classList.add('current');
   };
 
 
   updateButtons();
-  setupDots();
+  setupSquares();
 
   next.addEventListener('click', () => {
     currentIndex++;
     updateButtons();
-    updateDots()
+    updateSquares()
     moveSlides();
   });
 
   prev.addEventListener('click', () => {
     currentIndex--;
     updateButtons();
-    updateDots()
+    updateSquares()
     moveSlides();
   });
 

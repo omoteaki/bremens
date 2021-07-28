@@ -104,6 +104,10 @@ a img {
   z-index: -1;
 }
 
+.moon.hidden {
+  display: none;
+}
+
 .bremens {
   position: absolute;
   top: 40px;
@@ -213,6 +217,7 @@ a img {
   position: absolute;
   bottom: 36px;
   right: 36px;
+  z-index: 10;
 }
 
 
@@ -296,11 +301,19 @@ ul.menu.appear {
 
 
 .cat {
-  width: 40%;
-  height: 40%;
+  width: 60%;
+  height: 60%;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* z-index: -5; */
 }
+
+.cat.hidden {
+  display: none;
+}
+
 .cat img {
   width: 40px;
   position: absolute;
@@ -604,7 +617,7 @@ footer > p + p {
   }
 
   .cat {
-    display: none;
+    /* display: none; */
   }
 
   .moon {
