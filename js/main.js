@@ -191,14 +191,4 @@
     moveSlides();
   });
 
-  // window.addEventListener('resize', () => {
-  //   moveSlides();
-  // });
-
-
-
-
-
-
-
 }
