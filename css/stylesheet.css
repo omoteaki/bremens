@@ -29,14 +29,8 @@ p,
 li,
 label {
   font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
-  /* font-family: "Hiragino Kaku Gothic ProN"; */
-  /* font-family: sans-serif; */
-  /* margin-bottom: 18px; */
 }
 
-/* div {
-  font-family: "Hiragino Kaku Gothic ProN";
-} */
 
 input {
   width: 50%;
@@ -104,27 +98,27 @@ a img {
 
 .moon {
   position: absolute;
-  /* top: 50%; */
   bottom: 72px;
-  right: 36px;
+  right: 0;
   width: 400px;
   height: 400px;
+  margin: 36px;
   border-radius: 50%;
   background-color: white;
-  /* z-index: 60; */
   opacity: 1;
   transition: opacity 1s;
+  z-index: -1;
+  box-shadow: 0 0 30px white;
 }
 
 .moon.closed {
-  /* display: none; */
   opacity: 0;
 }
 
 .bremens {
   position: absolute;
-  top: 60px;
-  right: -20px;
+  top: 100px;
+  right: 0px;
 }
 
 
@@ -197,10 +191,6 @@ a img {
 }
 
 
-/* .select h3 {
-  color: 0 0 15px rgb(53, 16, 145);
-} */
-
 #music-popup img {
   width: 150px;
   box-shadow: 0 0 15px rgb(53, 16, 145);
@@ -257,14 +247,6 @@ a img {
   /* text-align: center; */
 }
 
-/* main {
-  overflow: hidden;
-}
-
-body {
-  overflow: hidden;
-} */
-
 
 #music-popup.small {
   position: absolute;
@@ -302,10 +284,7 @@ body {
   /* padding: 5px; */
   margin: 5px;
   box-shadow: 0 0 5px rgba(77, 77, 77, 0.639);
-  /* display: none; */
-  /* transition-property: display; */
-  /* transition-duration: 5s; */
-  /* transition-delay: 3s; */
+
   animation: popup 4s forwards;
 }
 
@@ -403,7 +382,7 @@ ul.menu.appear {
 /* メイン背景 */
 #back {
   background-color: skyblue;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   padding-top: 110px;
   position: fixed;
@@ -689,7 +668,7 @@ footer > p + p {
 
 @media (min-width: 0px) and (max-width: 599px) {
   body {
-    background-color: rgb(137, 207, 235);
+    /* background-color: rgb(137, 207, 235); */
     overflow-x: hidden;
   }
 
@@ -786,11 +765,12 @@ footer > p + p {
   .moon {
     position: absolute;
     background-color: rgba(135, 207, 235, 0);
+    box-shadow: none;
     /* overflow: hidden; */
   }
   
   .bremens {
-    right: -60px;
+    /* right: -60px; */
   }
 
   /* NEW RELEASE */
