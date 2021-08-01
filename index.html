@@ -29,18 +29,21 @@
   <main>
     <!-- ポップアップ -->
     <div id="music-popup" class="music-popup">
-      <p>こちらのサイトでは音楽が流れます。</p>
+      <p id="information">こちらのサイトでは音楽が流れます。</p>
       <div class="disc">
         <img src="img/tsukinoshitade.jpg">
         <div class="select">
-          <p>♪月の下で</p>
+          <h3>♪月の下で</h3>
           <div id="popup-play">再生する</div>
           <div id="popup-skip">今は聞かない</div>
         </div>
       </div>
+      <button id="popup-close">
+        <span class="material-icons">close</span>
+      </button>
     </div>
 
-
+    <div id="message" class="hidden"><div>こちらから再生できます</div></div>
     <div class="bgm">
         <!-- 再生ボタン -->
         <button id="play" class=""><span class="material-icons">play_arrow</span></button>
@@ -49,7 +52,6 @@
         <button id="volume-down"><span class="material-icons">volume_down</span></button>
         <!-- ミュートボタン -->
         <button id="mute"><span class="material-icons">volume_off</span></button>
-      <!-- </div> -->
     </div>
 
     <!-- メニューボタン -->
@@ -74,7 +76,7 @@
           <a href="https://www.youtube.com/channel/UCblSUGO6ncjJymq7_uDJObQ" class="youtube-icon"><img src="img/yt_icon_mono_dark.png" alt="YouTubeへのリンクです"></a>
         </div>
       </div>
-      <div class="moon hidden">
+      <div class="moon closed">
 
         <img src="img/BREMENS.png" alt="" class="bremens">
       </div>
@@ -208,6 +210,7 @@
       <label>お名前<br><input type="text"></label><br>
       <label>ご連絡先<br><input type="text"></label><br>
       <label>お問い合わせ内容<br><textarea></textarea></label>
+      <button type="submit">送信</button>
     </section>
     <!-- <div id="top">PAGE TOP</div> -->
   </main>

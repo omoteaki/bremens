@@ -72,16 +72,30 @@
   const moon = document.querySelector('.moon');
   const backgroundColor = document.getElementById('back');
 
+  const popupClose = document.getElementById('popup-close');
+
+  const message = document.getElementById('message');
+
+
 
   skip.addEventListener('click', function(){
     musicPopup.classList.add('close');
+    message.classList.remove('hidden');
   });
+
+  popupClose.addEventListener('click', function(){
+    // musicPopup.classList.add('small');
+    musicPopup.classList.add('close');
+    message.classList.remove('hidden');
+    // information.innerHTML = "こちらからいつでも再生できます";
+  });
+
   popupPlay.addEventListener('click', function(){
     play.innerHTML = "<span class='material-icons'>pause</span>";
       music.play();
       musicPopup.classList.add('close');
       cat.classList.add('hidden');
-      moon.classList.remove('hidden');
+      moon.classList.remove('closed');
       backgroundColor.classList.add('night');
   });
 
@@ -89,7 +103,7 @@
     play.innerHTML = "<span class='material-icons'>play_arrow</span>";
     backgroundColor.classList.remove('night');
     cat.classList.remove('hidden');
-    moon.classList.add('hidden');
+    moon.classList.add('closed');
   });
   // 再生ボタン
   play.addEventListener('click', function(){
@@ -97,14 +111,14 @@
       play.innerHTML = "<span class='material-icons'>play_arrow</span>";
       backgroundColor.classList.remove('night');
       cat.classList.remove('hidden');
-      moon.classList.add('hidden');
+      moon.classList.add('closed');
       music.pause();
     } else {
       play.innerHTML = "<span class='material-icons'>pause</span>";
       music.play();
       backgroundColor.classList.add('night');
       cat.classList.add('hidden');
-      moon.classList.remove('hidden');
+      moon.classList.remove('closed');
     }
   });
 
